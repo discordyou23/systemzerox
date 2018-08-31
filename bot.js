@@ -23,7 +23,7 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {                           
-client.user.setGame(`System Zerox`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
+client.user.setGame(`System Zorex`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
@@ -33,7 +33,7 @@ client.user.setGame(`System Zerox`,'https://www.twitch.tv/fofodiscord');
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`💥Welcome To Server Zerox Community💥
+  return channel.send(`💥Welcome To Server Zorex Community💥
 💥Name Member: ${member}
 💥You Number: ${member.guild.memberCount}`) 
 }).catch(console.error)
@@ -66,7 +66,7 @@ message.guild.members.forEach(m => {
 var bc = new
 Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle('🎇**Zerox Community**🎇')
+.setTitle('🎇**Zorex Community**🎇')
 .addField('👑**الرسالة**👑', args)
 m.send({ embed: bc })
 msg.delete();
@@ -95,11 +95,68 @@ client.on('message',async Epic => {
       SPEAK: false
     });
     setInterval(() => {
-      c.setName(` Zerox_online :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
+      c.setName(` Zorex_online :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
     },1000);
   });
   }
 });
+
+
+
+
+client.on('message', msg => {
+  if(msg.content === 'السلام عليكم')
+  msg.reply('**👑وعليكم السلام👑**')
+});
+
+
+
+client.on('message', msg => {
+  if(msg.content === 'مرحبا')
+  msg.reply('**😍مراحب😍**')
+});
+
+
+
+
+
+client.on('message', msg => {
+  if(msg.content === 'برب')
+  msg.reply('**😍الله متك😍**')
+});
+
+
+
+
+client.on('message', msg => {
+  if(msg.content === 'باي')
+  msg.reply('**👑الله معك👑**')
+});
+
+
+
+client.on('message', msg => {
+  if(msg.content === 'شعار')
+  msg.reply('**! Zx™**')
+});
+
+
+
+client.on('message', msg => {
+  if(msg.content === ' موقع السيرفر')
+  msg.reply('**https://ZorexHost.com**')
+});
+
+
+
+
+client.on('message', msg => {
+  if(msg.content === 'هلا')
+  msg.reply('**💥هلوات💥**')
+});
+
+
+
 
 
 
