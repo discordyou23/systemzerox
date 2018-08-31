@@ -95,7 +95,7 @@ client.on('message',async Epic => {
       SPEAK: false
     });
     setInterval(() => {
-      c.setName(` 👑Zerox_online :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
+      c.setName(` Zerox_online :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
     },1000);
   });
   }
